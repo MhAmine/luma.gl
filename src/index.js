@@ -116,20 +116,21 @@ export {
 } from './io';
 
 // shadertools
-export {default as ShaderCache} from './shadertools/lib/shader-cache';
-export {assembleShaders} from './shadertools/lib/assemble-shaders';
 export {
-  registerShaderModules,
-  setDefaultShaderModules} from './shadertools/lib/shader-modules';
+  setDefaultShaderModules,
+  registerShaderModules
+} from './shadertools/src/lib/resolve-modules';
+export {assembleShaders} from './shadertools/src/lib/assemble-shaders';
+export {default as ShaderCache} from './shadertools/src/shader-cache';
 
 // shader modules
-export {default as fp32} from './shadertools/modules/fp32/fp32';
-export {default as fp64} from './shadertools/modules/fp64/fp64';
-export {default as project} from './shadertools/modules/project/project';
-export {default as lighting} from './shadertools/modules/lighting/lighting';
-export {default as dirlight} from './shadertools/modules/dirlight/dirlight';
-export {default as picking} from './shadertools/modules/picking/picking';
-export {default as diffuse} from './shadertools/modules/diffuse/diffuse';
+export {default as fp32} from './shadertools/src/modules/fp32/fp32';
+export {default as fp64} from './shadertools/src/modules/fp64/fp64';
+export {default as project} from './shadertools/src/modules/project/project';
+export {default as lighting} from './shadertools/src/modules/lighting/lighting';
+export {default as dirlight} from './shadertools/src/modules/dirlight/dirlight';
+export {default as picking} from './shadertools/src/modules/picking/picking';
+export {default as diffuse} from './shadertools/src/modules/diffuse/diffuse';
 
 // EXPERIMENTAL EXPORTS
 
